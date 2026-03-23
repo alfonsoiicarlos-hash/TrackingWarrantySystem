@@ -1,0 +1,110 @@
+:root {
+             --primary: #008028ff;
+            --secondary: #232323ff;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #3b82f6;
+            --dark: #1f2937;
+            --light: #f8fafc;
+        }
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: #f8fafc;
+            font-weight: 400;
+        }
+        
+        .sidebar {
+            background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            padding-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 3px 0 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .sidebar-brand {
+            padding: 0 20px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar-nav li {
+            margin: 5px 15px;
+        }
+        
+        .sidebar-nav a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .sidebar-nav a:hover, .sidebar-nav a.active {
+            background: rgba(255,255,255,0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar-nav i {
+            font-size: 1.3rem;
+            margin-right: 12px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            padding: 30px;
+            transition: all 0.3s;
+            background: #f8fafc;
+            min-height: 100vh;
+        }
+        
+        .navbar-custom {
+            background: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border-radius: 15px;
+            padding: 15px 25px;
+            margin-bottom: 30px;
+        }
+        
+        .form-card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 0;
+            margin-bottom: 30px;
+            border: none;
+            overflow: hidden;
+        }
+        
+        .form-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 25px 30px;
+        }
+        
+        .form-body {
+            padding: 30px;
+        }
